@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper input {
+    margin-top: 20px;
+    width: 30%;
+    font-size: 20px;
+    border: 0;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+    transition: border-color 0.2s;
+    padding: 7px 0;
+}
+
+.wrapper input::placeholder {
+    color: inherit;
+}
+
+.wrapper input:focus {
+    outline: none;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .wrapper input {
+width: 70%;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+    .wrapper input {
+width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1900px) {
+    .wrapper input {
+width: 40%;
+    }
+}
